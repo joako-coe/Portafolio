@@ -1,0 +1,379 @@
+/*BASE*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d1117;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV*/
+nav {
+    background-color: #010409;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #e8e8f0;
+    text-decoration: none;
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid #2a2a35;
+    padding: 0.3rem 0.65rem;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+}
+
+.nav-logo:hover {
+    border-color: #7effa0;
+    color: #7effa0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav ul a:hover {
+    color: #7effa0;
+}
+
+/* HERO */
+section#hero {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+section#hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+section#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #7effa0;
+    margin-bottom: 0.5rem;
+}
+
+section#hero h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6b6b80;
+    margin-bottom: 2rem;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.hero-btns a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.hero-btns a:hover {
+    opacity: 0.85;
+}
+
+.hero-btns a.primary {
+    background-color: #7effa0;
+    color: #0a0a0f;
+    font-weight: 600;
+}
+.hero-btns a.secondary {
+    background-color: #7effa0;
+    color: #0a0a0f;
+    font-weight: 600;
+}
+
+/*SOBRE MÍ*/
+section#Sobre-mi {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#Sobre-mi h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+section#Sobre-mi p {
+    color: #6b6b80;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+/*Info grid con dl*/
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 2rem;
+    margin-top: 1.75rem;
+    padding: 0;
+}
+
+.info-grid div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-grid dt {
+    font-size: 0.75rem;
+    color: #6b6b80;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.15rem;
+}
+
+.info-grid dd {
+    font-size: 0.9rem;
+    color: #e8e8f0;
+    margin: 0;
+}
+
+/*HABILIDADES*/
+section#Habilidades {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#Habilidades h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+section#Habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+section#Habilidades li {
+    background-color: #111118;
+    border: 1px solid #2a2a35;
+    color: #7effa0;
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+}
+
+section#Habilidades li:hover {
+    border-color: #7effa0;
+}
+
+/*FORMACIÓN*/
+section#Formación {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#Formación h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.edu-item {
+    border-left: 2px solid #7effa0;
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.edu-year {
+    display: block;
+    font-size: 0.78rem;
+    color: #6b6b80;
+    margin-bottom: 0.25rem;
+}
+
+.edu-item h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+    color: #e8e8f0;
+}
+
+.edu-item p {
+    color: #6b6b80;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0 0 0.15rem;
+}
+
+.edu-desc {
+    font-size: 0.82rem !important;
+}
+
+.edu-divider {
+    border: none;
+    border-top: 1px solid #2a2a35;
+    margin: 1.5rem 0 1.5rem 1.25rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #1a2e1f;
+    color: #7effa0;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 0.4rem;
+}
+
+/*PROYECTOS*/
+section#Proyectos {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#Proyectos h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.project-placeholder {
+    border: 1px dashed #2a2a35;
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #111118;
+}
+
+.project-icon {
+    font-size: 1.75rem;
+    color: #6b6b80;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+
+.project-placeholder p {
+    color: #6b6b80;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.project-firma {
+    color: #7effa0 !important;
+    font-size: 0.88rem !important;
+    margin-top: 0.75rem;
+}
+
+/*CONTACTO*/
+section#Contacto {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#Contacto h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+section#Contacto p {
+    color: #6b6b80;
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+}
+
+.contacto-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+}
+
+.contacto-links a {
+    display: inline-block;
+    color: #7effa0;
+    text-decoration: none;
+    border: 1px solid #2a2a35;
+    padding: 0.6rem 1.25rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.contacto-links a:hover {
+    border-color: #7effa0;
+}
+
+/*HR Y FOOTER*/
+hr {
+    border: none;
+    border-top: 1px solid #2a2a35;
+    margin: 0;
+}
+
+footer {
+    text-align: right;
+    padding: 2rem;
+    border-top: 1px solid #2a2a35;
+    color: #6b6b80;
+    font-size: 0.8rem;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 600px) {
+    section#hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
